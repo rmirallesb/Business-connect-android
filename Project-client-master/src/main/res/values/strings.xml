@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Business Connect</string>
+    <string name="title_wall">Tablon</string>
+    <string name="title_filterlist_fragment">Seccion</string>
+    <string name="title_activity_activity_text">Business Connect</string>
+    <string name="title_activity_activity_add">Business Connect</string>
+    <string name="title_activity_activity_add_text">Business Connect</string>
+    <string name="title_activity_activity_map">Business Connect</string>
+
+    <string name="titulo_nuevo_anuncio">Seccion</string>
+    <string name="preferencias">Preferencias</string>
+
+    <string name="options">Opciones</string>
+    <string name="soundOn">Activar sonido</string>
+
+    <string name="menu_new_text">Enviar</string>
+    <string name="menu_preferences">Preferencias</string>
+</resources>

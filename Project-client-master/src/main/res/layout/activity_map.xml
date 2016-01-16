@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              tools:context="org.rmiralles.app.activity.MapActivity" android:background="#ff7700ff"
+              android:weightSum="1">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/mapText"
+              tools:context="org.rmiralles.app.activity.MapActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment" android:layout_weight="0.78"/>
+
+</LinearLayout>

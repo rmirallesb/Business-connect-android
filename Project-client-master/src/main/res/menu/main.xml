@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+            android:id="@+id/menu_new_text"
+            android:icon="@drawable/ic_menu_add"
+            android:showAsAction="always"
+            android:title="@string/menu_new_text">
+    </item>
+    <item
+            android:id="@+id/menu_preferences"
+            android:icon="@drawable/ic_menu_preferences"
+            android:showAsAction="always"
+            android:title="@string/menu_preferences">
+    </item>
+    <item
+            android:title="-"
+            android:icon="@drawable/ic_menu_moreoverflow_normal_holo_light"
+            android:showAsAction="always">
+        <menu>
+            <item
+                    android:id="@+id/menu_logout"
+                    android:icon="@drawable/ic_about"
+                    android:showAsAction="always"
+                    android:title="Logout">
+            </item>
+        </menu>
+    </item>
+</menu>

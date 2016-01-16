@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_project-client-master-project-client-master" default="compile.module.project-client-master-project-client-master">
+  <dirname property="module.project-client-master-project-client-master.basedir" file="${ant.file.module_project-client-master-project-client-master}"/>
+  
+  <property name="module.jdk.home.project-client-master-project-client-master" value="${jdk.home.android_api_18_platform}"/>
+  <property name="module.jdk.bin.project-client-master-project-client-master" value="${jdk.bin.android_api_18_platform}"/>
+  <property name="module.jdk.classpath.project-client-master-project-client-master" value="jdk.classpath.android_api_18_platform"/>
+  
+  <property name="compiler.args.project-client-master-project-client-master" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="project-client-master-project-client-master.output.dir" value="${module.project-client-master-project-client-master.basedir}/build/intermediates/classes/debug"/>
+  <property name="project-client-master-project-client-master.testoutput.dir" value="${module.project-client-master-project-client-master.basedir}/build/intermediates/classes/debug"/>
+  
+  <path id="project-client-master-project-client-master.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="project-client-master-project-client-master.module.production.classpath">
+    <path refid="${module.jdk.classpath.project-client-master-project-client-master}"/>
+    <path refid="library.play-services-maps-7.3.0.classpath"/>
+    <path refid="library.play-services-wallet-7.3.0.classpath"/>
+    <path refid="library.play-services-drive-7.3.0.classpath"/>
+    <path refid="library.play-services-analytics-7.3.0.classpath"/>
+    <path refid="library.support-annotations-22.2.0.classpath"/>
+    <path refid="library.play-services-panorama-7.3.0.classpath"/>
+    <path refid="library.play-services-appindexing-7.3.0.classpath"/>
+    <path refid="library.play-services-cast-7.3.0.classpath"/>
+    <path refid="library.play-services-location-7.3.0.classpath"/>
+    <path refid="library.play-services-ads-7.3.0.classpath"/>
+    <path refid="library.play-services-7.3.0.classpath"/>
+    <path refid="library.jackson-annotations-2.3.0.classpath"/>
+    <path refid="library.play-services-base-7.3.0.classpath"/>
+    <path refid="library.play-services-safetynet-7.3.0.classpath"/>
+    <path refid="library.play-services-appinvite-7.3.0.classpath"/>
+    <path refid="library.play-services-gcm-7.3.0.classpath"/>
+    <path refid="library.play-services-nearby-7.3.0.classpath"/>
+    <path refid="library.support-v4-22.2.0.classpath"/>
+    <path refid="library.spring-android-rest-template-1.0.1.release.classpath"/>
+    <path refid="library.play-services-fitness-7.3.0.classpath"/>
+    <path refid="library.jackson-core-2.3.2.classpath"/>
+    <path refid="library.play-services-plus-7.3.0.classpath"/>
+    <path refid="library.jackson-databind-2.3.2.classpath"/>
+    <path refid="library.json-simple-1.1.classpath"/>
+    <path refid="library.play-services-wearable-7.3.0.classpath"/>
+    <path refid="library.support-v13-22.2.0.classpath"/>
+    <path refid="library.play-services-appstate-7.3.0.classpath"/>
+    <path refid="library.play-services-games-7.3.0.classpath"/>
+    <path refid="library.play-services-identity-7.3.0.classpath"/>
+    <path refid="library.spring-android-core-1.0.1.release.classpath"/>
+  </path>
+  
+  <path id="project-client-master-project-client-master.runtime.production.module.classpath">
+    <pathelement location="${project-client-master-project-client-master.output.dir}"/>
+    <path refid="library.play-services-maps-7.3.0.classpath"/>
+    <path refid="library.play-services-wallet-7.3.0.classpath"/>
+    <path refid="library.play-services-drive-7.3.0.classpath"/>
+    <path refid="library.play-services-analytics-7.3.0.classpath"/>
+    <path refid="library.support-annotations-22.2.0.classpath"/>
+    <path refid="library.play-services-panorama-7.3.0.classpath"/>
+    <path refid="library.play-services-appindexing-7.3.0.classpath"/>
+    <path refid="library.play-services-cast-7.3.0.classpath"/>
+    <path refid="library.play-services-location-7.3.0.classpath"/>
+    <path refid="library.play-services-ads-7.3.0.classpath"/>
+    <path refid="library.play-services-7.3.0.classpath"/>
+    <path refid="library.jackson-annotations-2.3.0.classpath"/>
+    <path refid="library.play-services-base-7.3.0.classpath"/>
+    <path refid="library.play-services-safetynet-7.3.0.classpath"/>
+    <path refid="library.play-services-appinvite-7.3.0.classpath"/>
+    <path refid="library.play-services-gcm-7.3.0.classpath"/>
+    <path refid="library.play-services-nearby-7.3.0.classpath"/>
+    <path refid="library.support-v4-22.2.0.classpath"/>
+    <path refid="library.spring-android-rest-template-1.0.1.release.classpath"/>
+    <path refid="library.play-services-fitness-7.3.0.classpath"/>
+    <path refid="library.jackson-core-2.3.2.classpath"/>
+    <path refid="library.play-services-plus-7.3.0.classpath"/>
+    <path refid="library.jackson-databind-2.3.2.classpath"/>
+    <path refid="library.json-simple-1.1.classpath"/>
+    <path refid="library.play-services-wearable-7.3.0.classpath"/>
+    <path refid="library.support-v13-22.2.0.classpath"/>
+    <path refid="library.play-services-appstate-7.3.0.classpath"/>
+    <path refid="library.play-services-games-7.3.0.classpath"/>
+    <path refid="library.play-services-identity-7.3.0.classpath"/>
+    <path refid="library.spring-android-core-1.0.1.release.classpath"/>
+  </path>
+  
+  <path id="project-client-master-project-client-master.module.classpath">
+    <path refid="${module.jdk.classpath.project-client-master-project-client-master}"/>
+    <pathelement location="${project-client-master-project-client-master.output.dir}"/>
+    <path refid="library.play-services-maps-7.3.0.classpath"/>
+    <path refid="library.play-services-wallet-7.3.0.classpath"/>
+    <path refid="library.play-services-drive-7.3.0.classpath"/>
+    <path refid="library.play-services-analytics-7.3.0.classpath"/>
+    <path refid="library.support-annotations-22.2.0.classpath"/>
+    <path refid="library.play-services-panorama-7.3.0.classpath"/>
+    <path refid="library.play-services-appindexing-7.3.0.classpath"/>
+    <path refid="library.play-services-cast-7.3.0.classpath"/>
+    <path refid="library.play-services-location-7.3.0.classpath"/>
+    <path refid="library.play-services-ads-7.3.0.classpath"/>
+    <path refid="library.play-services-7.3.0.classpath"/>
+    <path refid="library.jackson-annotations-2.3.0.classpath"/>
+    <path refid="library.play-services-base-7.3.0.classpath"/>
+    <path refid="library.play-services-safetynet-7.3.0.classpath"/>
+    <path refid="library.play-services-appinvite-7.3.0.classpath"/>
+    <path refid="library.play-services-gcm-7.3.0.classpath"/>
+    <path refid="library.play-services-nearby-7.3.0.classpath"/>
+    <path refid="library.support-v4-22.2.0.classpath"/>
+    <path refid="library.spring-android-rest-template-1.0.1.release.classpath"/>
+    <path refid="library.play-services-fitness-7.3.0.classpath"/>
+    <path refid="library.jackson-core-2.3.2.classpath"/>
+    <path refid="library.play-services-plus-7.3.0.classpath"/>
+    <path refid="library.jackson-databind-2.3.2.classpath"/>
+    <path refid="library.json-simple-1.1.classpath"/>
+    <path refid="library.play-services-wearable-7.3.0.classpath"/>
+    <path refid="library.support-v13-22.2.0.classpath"/>
+    <path refid="library.play-services-appstate-7.3.0.classpath"/>
+    <path refid="library.play-services-games-7.3.0.classpath"/>
+    <path refid="library.play-services-identity-7.3.0.classpath"/>
+    <path refid="library.spring-android-core-1.0.1.release.classpath"/>
+  </path>
+  
+  <path id="project-client-master-project-client-master.runtime.module.classpath">
+    <pathelement location="${project-client-master-project-client-master.output.dir}"/>
+    <path refid="library.play-services-maps-7.3.0.classpath"/>
+    <path refid="library.play-services-wallet-7.3.0.classpath"/>
+    <path refid="library.play-services-drive-7.3.0.classpath"/>
+    <path refid="library.play-services-analytics-7.3.0.classpath"/>
+    <path refid="library.support-annotations-22.2.0.classpath"/>
+    <path refid="library.play-services-panorama-7.3.0.classpath"/>
+    <path refid="library.play-services-appindexing-7.3.0.classpath"/>
+    <path refid="library.play-services-cast-7.3.0.classpath"/>
+    <path refid="library.play-services-location-7.3.0.classpath"/>
+    <path refid="library.play-services-ads-7.3.0.classpath"/>
+    <path refid="library.play-services-7.3.0.classpath"/>
+    <path refid="library.jackson-annotations-2.3.0.classpath"/>
+    <path refid="library.play-services-base-7.3.0.classpath"/>
+    <path refid="library.play-services-safetynet-7.3.0.classpath"/>
+    <path refid="library.play-services-appinvite-7.3.0.classpath"/>
+    <path refid="library.play-services-gcm-7.3.0.classpath"/>
+    <path refid="library.play-services-nearby-7.3.0.classpath"/>
+    <path refid="library.support-v4-22.2.0.classpath"/>
+    <path refid="library.spring-android-rest-template-1.0.1.release.classpath"/>
+    <path refid="library.play-services-fitness-7.3.0.classpath"/>
+    <path refid="library.jackson-core-2.3.2.classpath"/>
+    <path refid="library.play-services-plus-7.3.0.classpath"/>
+    <path refid="library.jackson-databind-2.3.2.classpath"/>
+    <path refid="library.json-simple-1.1.classpath"/>
+    <path refid="library.play-services-wearable-7.3.0.classpath"/>
+    <path refid="library.support-v13-22.2.0.classpath"/>
+    <path refid="library.play-services-appstate-7.3.0.classpath"/>
+    <path refid="library.play-services-games-7.3.0.classpath"/>
+    <path refid="library.play-services-identity-7.3.0.classpath"/>
+    <path refid="library.spring-android-core-1.0.1.release.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.project-client-master-project-client-master">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.project-client-master-project-client-master">
+    <patternset refid="excluded.from.module.project-client-master-project-client-master"/>
+  </patternset>
+  
+  <path id="project-client-master-project-client-master.module.sourcepath">
+    <dirset dir="${module.project-client-master-project-client-master.basedir}">
+      <include name="build/generated/source/r/debug"/>
+      <include name="build/generated/source/aidl/debug"/>
+      <include name="build/generated/source/buildConfig/debug"/>
+      <include name="build/generated/source/rs/debug"/>
+      <include name="build/generated/res/rs/debug"/>
+      <include name="src/main/res"/>
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="project-client-master-project-client-master.module.test.sourcepath">
+    <dirset dir="${module.project-client-master-project-client-master.basedir}">
+      <include name="src/androidTest/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.project-client-master-project-client-master" depends="compile.module.project-client-master-project-client-master.production,compile.module.project-client-master-project-client-master.tests" description="Compile module Project-client-master-Project-client-master"/>
+  
+  <target name="compile.module.project-client-master-project-client-master.production" depends="register.custom.compilers" description="Compile module Project-client-master-Project-client-master; production classes">
+    <mkdir dir="${project-client-master-project-client-master.output.dir}"/>
+    <javac2 destdir="${project-client-master-project-client-master.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.project-client-master-project-client-master}/javac">
+      <compilerarg line="${compiler.args.project-client-master-project-client-master}"/>
+      <bootclasspath refid="project-client-master-project-client-master.module.bootclasspath"/>
+      <classpath refid="project-client-master-project-client-master.module.production.classpath"/>
+      <src refid="project-client-master-project-client-master.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.project-client-master-project-client-master"/>
+    </javac2>
+    
+    <copy todir="${project-client-master-project-client-master.output.dir}">
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/build/generated/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/build/generated/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/build/generated/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/build/generated/source/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/build/generated/res/rs/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.project-client-master-project-client-master.tests" depends="register.custom.compilers,compile.module.project-client-master-project-client-master.production" description="compile module Project-client-master-Project-client-master; test classes" unless="skip.tests">
+    <mkdir dir="${project-client-master-project-client-master.testoutput.dir}"/>
+    <javac2 destdir="${project-client-master-project-client-master.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.project-client-master-project-client-master}/javac">
+      <compilerarg line="${compiler.args.project-client-master-project-client-master}"/>
+      <bootclasspath refid="project-client-master-project-client-master.module.bootclasspath"/>
+      <classpath refid="project-client-master-project-client-master.module.classpath"/>
+      <src refid="project-client-master-project-client-master.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.project-client-master-project-client-master"/>
+    </javac2>
+    
+    <copy todir="${project-client-master-project-client-master.testoutput.dir}">
+      <fileset dir="${module.project-client-master-project-client-master.basedir}/src/androidTest/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.project-client-master-project-client-master" description="cleanup module">
+    <delete dir="${project-client-master-project-client-master.output.dir}"/>
+    <delete dir="${project-client-master-project-client-master.testoutput.dir}"/>
+  </target>
+</project>
